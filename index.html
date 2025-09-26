@@ -69,12 +69,8 @@
 <body>
     <div class="video-container">
         <video id="videoPlayer" controls preload="metadata" autoplay muted>
-            <!-- Primero intentamos como MP4 para mejor compatibilidad -->
-            <source src="https://raw.githubusercontent.com/fcnycs/qrnaty/main/Lic%20Saigg%20Promo%2020%20seg%20.mov" type="video/mp4">
-            <!-- Luego como QuickTime -->
-            <source src="https://raw.githubusercontent.com/fcnycs/qrnaty/main/Lic%20Saigg%20Promo%2020%20seg%20.mov" type="video/quicktime">
-            <!-- Fallback para navegadores muy antiguos -->
-            <source src="https://raw.githubusercontent.com/fcnycs/qrnaty/main/Lic%20Saigg%20Promo%2020%20seg%20.mov" type="video/x-msvideo">
+            <!-- Video en formato MP4 para máxima compatibilidad -->
+            <source src="https://raw.githubusercontent.com/fcnycs/qrnaty/main/video.mp4" type="video/mp4">
         </video>
         
         <div class="error-message" id="errorMessage">
