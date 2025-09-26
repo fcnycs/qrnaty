@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        .video-container {
+            max-width: 100%;
+            max-height: 100vh;
+            position: relative;
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            max-height: 100vh;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Estilo para pantalla completa */
+        video:fullscreen {
+            object-fit: contain;
+        }
+        
+        video:-webkit-full-screen {
+            object-fit: contain;
+        }
+        
+        video:-moz-full-screen {
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls preload="metadata">
+            <source src="Lic%20Saigg%20Promo%2020%20seg%20.mov" type="video/quicktime">
+            <source src="Lic%20Saigg%20Promo%2020%20seg%20.mov" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+        </video>
+    </div>
+</body>
+</html>
